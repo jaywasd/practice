@@ -49,7 +49,7 @@ box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.43);
     }
     .expanded{
         display: block;
-        color:rgb(0, 0, 0);
+        font-size: 19px;
         box-sizing: border-box;    
         margin-top: 5px;
         height: 30px;
@@ -57,6 +57,7 @@ box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.43);
     }
     .expandedParent{
         text-align: center;
+        color:rgb(0, 0, 0);
         background-color: whitesmoke;
         -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.43);
         -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.43);
@@ -64,7 +65,6 @@ box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.43);
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     }
     .expanded:hover{
-        display: block;
         cursor: pointer;
         color :rgb(216, 2, 2);
         /*border-bottom:2px #8b8b8b solid;*/
