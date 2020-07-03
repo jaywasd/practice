@@ -53,11 +53,11 @@ box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.43);
         box-sizing: border-box;    
         margin-top: 5px;
         height: 30px;
-        padding: 3px;
     }
     .expandedParent{
-        text-align: center;
-        color:rgb(0, 0, 0);
+        display: none;
+        text-align: right;
+        padding: 2px 15px;
         background-color: whitesmoke;
         -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.43);
         -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.43);
