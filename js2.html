@@ -3,6 +3,7 @@
 <head>
     <title>Flex implied</title>
     <link rel="stylesheet" href="js2.css">
+  
 </head>
 <body>
     <div class="navigationBar">
@@ -21,16 +22,21 @@
             <div class="navigationItem">
             About Us
             </div>
-            <button id="Btn" class="ButtonMenu" onclick="foo()">
+            <button id="Btn" class="ButtonMenu" onclick="onClickHandler()">
                 <img height="10px" src="more-512.webp">
             </button>
             <script>
-                 function foo(){
-                    alert("Under Construction");
-                 }
+                    let menuVisibility = false;
+                    console.log("BeforeCLck = ",menuVisibility)
+                    const onClickHandler = (e) => {
+                        console.log("Click");
+                        menuVisibility = menuVisibility ? false : true;
+                        console.log("AfterCLck  = ",menuVisibility)
+                    }
             </script>
     </div>
     <div class="expandedParent">
+        <!--avoid inline styling-->
         <div class="expanded" style="margin-top:10px;">
         Home
         </div>
