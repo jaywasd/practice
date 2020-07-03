@@ -8,17 +8,22 @@
 -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.43);
 box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.43);
     box-sizing: border-box;
+    border-radius: 3px;     
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .ButtonMenu {
     display: none;
 }
+.expanded{
+    display: none;        
+}
 .navigationItem {
     display: flex;
     color:rgb(0, 0, 0);
     margin : 2px 10px;
     box-sizing: border-box;
+    padding: 3px;
 
 }
 .navigationItem:hover {
@@ -26,7 +31,7 @@ box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.43);
     cursor: pointer;
     color :rgb(216, 2, 2);
     /*border-bottom:2px #8b8b8b solid;*/
-    transition: .1s;
+    transition: .3s;
     background: rgb(221, 221, 221);
     border-radius: 3px;
     padding: 3px;
@@ -41,6 +46,32 @@ box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.43);
     }
     .ButtonMenu:hover {
         cursor: pointer;
+    }
+    .expanded{
+        display: block;
+        color:rgb(0, 0, 0);
+        box-sizing: border-box;    
+        margin-top: 5px;
+        height: 30px;
+        padding: 3px;
+    }
+    .expandedParent{
+        text-align: center;
+        background-color: whitesmoke;
+        -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.43);
+        -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.43);
+        box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.43);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    }
+    .expanded:hover{
+        display: block;
+        cursor: pointer;
+        color :rgb(216, 2, 2);
+        /*border-bottom:2px #8b8b8b solid;*/
+        transition: .3s;
+        background: rgb(221, 221, 221);
+        border-radius: 3px;
+        padding : 3px;
     }
 }
 @media (max-width : 768px){
